@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 const ChildNumber = (props) => {
   return (
@@ -9,4 +9,4 @@ const ChildNumber = (props) => {
 };
 ChildNumber.whyDidYouRender = true;
 
-export default ChildNumber;
+export default memo(ChildNumber);
